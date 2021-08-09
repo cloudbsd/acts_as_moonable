@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  published_at: 2021-08-09 14:36:34
+  approved_on: 2021-08-09
+  status: 1
+  priority: 1
+
+two:
+  title: MyString
+  published_at: 2021-08-09 14:36:34
+  approved_on: 2021-08-09
+  status: 1
+  priority: 1
