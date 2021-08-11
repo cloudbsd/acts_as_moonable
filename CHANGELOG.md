@@ -1,13 +1,19 @@
 # ActsAsMoonable
 
 
-## 待发布
+## Unreleased
 
 ### Features
 * Recordable Module
 
 ### Bugfixes
 * 无
+
+
+## v0.3.1 (2021-08-11)
+
+### Bugfixes
+* fix `local_field_interval` scope bug if interval is in just one days
 
 
 ## v0.3.0 (2021-08-11)
@@ -24,6 +30,6 @@
 
 ## v0.1.0 (2021-08-09)
 
-### 初始发布
+### Initial Release
 
 * CoreExt Module

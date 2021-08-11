@@ -36,10 +36,10 @@ module ActsAsMoonable
       }
 
       #  database:  utc time
-      # parameter:  local date/time
-      scope :local_field_interval, -> (field, dt1, dt2) {
-        t1 = dt1.to_time if dt1.present?
-        t2 = dt2.to_time if dt2.present?
+      # parameter:  local date
+      scope :local_field_interval, -> (field, d1, d2) {
+        t1 = d1.to_time.beginning_of_day if d1.present?
+        t2 = d2.to_time.end_of_day if d2.present?
         time_field_interval(field, t1, t2)
       }
     end

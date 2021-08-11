@@ -49,11 +49,16 @@ class IntervalTest < ActiveSupport::TestCase
     d1 = Date.new 2021, 8, 1
     d2 = Date.new 2021, 8, 2
     cnt = Post.local_field_interval('published_at', d1, d2).count
-    assert_equal 21, cnt
+    assert_equal 40, cnt
 
-    t1 = Time.new(2021, 8, 1, 0).getutc
-    t2 = Time.new(2021, 8, 2, 10).getutc
+    t1 = Time.new(2021, 8, 1, 0)
+    t2 = Time.new(2021, 8, 2, 10)
     cnt = Post.local_field_interval('published_at', t1, t2).count
-    assert_equal 31, cnt
+    assert_equal 40, cnt
+
+    t1 = Time.new(2021, 8, 1, 0)
+    t2 = Time.new(2021, 8, 1, 0)
+    cnt = Post.local_field_interval('published_at', t1, t2).count
+    assert_equal 20, cnt
   end
 end
