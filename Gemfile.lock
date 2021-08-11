@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    acts_as_moonable (0.1.0)
+    acts_as_moonable (0.3.0)
       rails (>= 5.2)
 
 GEM

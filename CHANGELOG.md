@@ -1,12 +1,19 @@
 # ActsAsMoonable
 
+
 ## 待发布
 
 ### Features
-* Interval Module
+* Recordable Module
 
 ### Bugfixes
 * 无
+
+
+## v0.3.0 (2021-08-11)
+
+### Features
+* Interval Module
 
 
 ## v0.2.0 (2021-08-09)

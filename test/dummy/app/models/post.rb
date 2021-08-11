@@ -1,6 +1,4 @@
 class Post < ApplicationRecord
-  include ActsAsMoonable::Humanable
-
   # constants
   CURRENCY = %w( CNY USD EUR GBP JPY )
 
