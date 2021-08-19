@@ -10,6 +10,12 @@
 * 无
 
 
+## v0.3.2 (2021-08-19)
+
+### Bugfixes
+* fix `human_action_name` use nonexisted locale bug
+
+
 ## v0.3.1 (2021-08-11)
 
 ### Bugfixes

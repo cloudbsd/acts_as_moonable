@@ -7,12 +7,11 @@ module ActsAsMoonable
         self.human_attribute_name attr
       end
 
-      def human_action_name action
-        I18n.t("layouts.action.#{action}", model: self.model_name.human)
+      def human_action_name action, views="defaults"
+        I18n.t("#{views}.action.#{action}", model: self.model_name.human)
       end
 
       def human_enum_name(enum_name, enum_value)
-      # I18n.t("activerecord.attributes.#{self.model_name.i18n_key}.#{enum_name.to_s.pluralize}.#{enum_value}")
         self.human_attribute_name "#{enum_name}.#{enum_value}"
       end
 
@@ -28,7 +27,7 @@ module ActsAsMoonable
     end
 
     def i18n_attribute_name attr
-      self.class.human_attribute_name attr
+      self.class.i18n_attribute_name attr
     end
 
     def human_enum_name enum_name
