@@ -21,7 +21,7 @@ module ActsAsMoonable
       end
 
       def human_array_choices enum_name
-        array_values = self.const_get enum_name.upcase
+        array_values = self.const_get enum_name.to_s.pluralize.upcase
         array_values.map { |enum_value| [ self.human_enum_name(enum_name, enum_value), enum_value ] }
       end
     end

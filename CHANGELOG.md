@@ -10,6 +10,12 @@
 * 无
 
 
+## v0.3.3 (2021-08-23)
+
+### Bugfixes
+* change `human_array_choices` implementation code
+
+
 ## v0.3.2 (2021-08-19)
 
 ### Bugfixes
