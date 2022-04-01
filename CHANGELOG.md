@@ -10,6 +10,12 @@
 * 无
 
 
+## v0.3.4 (2022-04-01)
+
+### Bugfixes
+* upgrade rails to version 7 for test/dummy code
+
+
 ## v0.3.3 (2021-08-23)
 
 ### Bugfixes
